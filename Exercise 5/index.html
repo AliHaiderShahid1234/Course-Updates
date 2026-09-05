@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design this layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            align-items: center;
+            background-color: violet;
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            font-size: large;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            background-color: inherit;
+        }
+
+        ul li {
+            background-color: inherit;
+            color: white;
+        }
+
+        .hero {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            background-color: green;
+            margin: 20px 20px;
+        }
+
+        .box1 {
+            margin: 50px;
+            width: 500px;
+            height: 450px;
+            background-color: rgba(255, 173, 186, 0.98);
+        }
+
+        .box2 {
+            margin: 50px;
+            width: 500px;
+            height: 450px;
+            background-color: rgb(111, 195, 248);
+        }
+
+        .invitation {
+            min-height: 50vh;
+        }
+
+        .rounded {
+            background-color: white;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 40px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            margin: 30px;
+        }
+
+        .rounded h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        .image {
+            position: fixed;
+            width: 50px;
+            border: 1px solid white;
+            border-radius: 50px;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        footer {
+            background-color: white;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="box1">
+            </div>
+
+            <div class="box2">
+            </div>
+        </section>
+    </header>
+
+    <section class="invitation">
+        <div class="rounded">
+            <h1>Welcome to the Sigma Web Development Express</h1>
+        </div>
+    </section>
+    
+    <img src="img.png" class="image" alt="">
+    <footer>
+    </footer>
+</body>
+</html>

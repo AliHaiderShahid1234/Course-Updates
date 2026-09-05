@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and outlines</title>
+</head>
+<style>
+    .box {
+        border: 1px solid green;
+        box-shadow: 5px 5px 15px rgb(13, 255, 1);
+        border-radius: 20px;
+        outline: 2px solid black;
+        outline-offset: 5px;
+    }
+
+    /* outline cannot be directly curved it follows the curve set to the border using border radius */
+</style>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+</body>
+</html>
