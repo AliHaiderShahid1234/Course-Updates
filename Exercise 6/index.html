@@ -33,7 +33,25 @@
         ul {
             display: flex;
             justify-content: center;
+            gap: 30px;
             align-items: center;
+            list-style: none;
+        }
+
+        li {
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right {
+            display: flex;
+        }
+
+        .download {
+            background-color: #ffd741;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 10%;
         }
     </style>
 </head>
@@ -43,14 +61,17 @@
             <img src="logo.png" alt="">
         </div>
             <ul>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
+                <li>Products</li>
+                <li>Buy</li>
+                <li>Renew</li>
+                <li>Support</li>
+                <li>Learn</li>
+                <li>Company</li>
             </ul>
-        <div class="right"></div>
+        <div class="right">
+            <button class="download">Download</button>
+            <p>🌐</p>
+        </div>
     </nav>
 </body>
 </html>
